@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+:root{
+    --cor01:#FFCEAE;
+    --cor02:#FF8B3E;
+    --cor03:#FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #FFF5DD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 1em;
+    margin: 10px;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* CONTEUDO DO CABECALHO  */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.container h1{
+    text-decoration: underline;
+    padding: 20px 0;
+}
+
+
+
+/* ////////////////////////////////////////////////////////// */
+/* TABELA */
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 17px;
+    font-family: sans-serif;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #FF8B3E;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding-top: 12px;
+    padding-right: 45px;
+    padding-left: 5px;
+}
+
+.styled-table .btns{
+    padding: 0;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FF8B3E;
+}
+
+.btn-edit, .btn-remove {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn-edit {
+    background-color: #FF8B3E;
+    color: white;
+    border: none;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.btn-remove {
+    background-color: #FF8B3E;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btns a:hover{
+    background-color: #b9652d;
+}
+
+.addBtn{
+    text-decoration: none;
+    background-color: #FF8B3E;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    padding: 11px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.addBtn ion-icon{
+    font-size: 30px;
+}
+
+.addBtn:hover{
+    background-color: #b9652d;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* NOVA TABELA 07/10 !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+table {
+    font-size: 17px;
+    font-family: sans-serif;
+    width: 80%;
+    border-collapse: collapse;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--cor02);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #000
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #FFF5DD;
+    color: #000;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #FF8B3E;
+}
+/* ///////////////////////////////// */
+
+.dark-mode {
+    background-color: var(--dark);
+}
+
+.dark-mode h1{
+    color: #fff;
+}
+
+.dark-mode .styled-table td {
+    background-color: #0F181D;
+    color: white;
+}
+
+
+.dark-mode td {
+    background-color: var(--dark2);
+}
+
+.dark-mode tbody tr:nth-of-type(even) {
+    color: #fff;
+}
+
+.dark-mode tr:nth-of-type(odd) {
+    color: #fff;
+}

@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+:root{
+    --cor01:#FFCEAE;
+    --cor02:#FF8B3E;
+    --cor03:#FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+}
+
+
+body {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #FFF5DD;
+
+    /* Display do footer */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 1em;
+    margin: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* CONTEUDO DO CABECALHO  */
+
+.container_main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.main-text{
+    max-width: 35rem;
+}
+.main-text h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-text p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777;
+    text-align: justify;
+}
+
+.main-text img {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.main-img img{
+    width: 100%;
+    margin-left: 5%;
+}
+
+@media (max-width:700px) /* para telas menores, mobile */
+{
+    .container_main
+    {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+        height: 100%;
+    }
+    .container_main h2
+    {
+        font-size: 15px;
+    }
+    .container_main p
+    {
+        font-size: 15px;
+    }
+    .main-img
+    {
+        width: 125%;
+    }
+}
+
+
+/* ////////////////////////////////////////////////////////// */
+/* Barra de Pesquisa */
+
+.barra_pesquisa {
+    background-color: var(--cor01);
+    margin: 30px;
+    padding: 2%;
+    border-radius: 40px;
+    font-size: 1.3em;
+    /* text-align: center; */
+}
+
+.barra_pesquisa span {
+    background-color: var(--cor02);
+    margin: -30px;
+    margin-right: 30px;
+    padding: 2.2%;
+    border-radius: 40px;
+    
+}
+
+.barra_pesquisa a {
+    color: #000;
+    background-color: var(--cor02);
+    text-align: center;
+    padding: 5px 7px;
+    border-radius: 60%;
+} 
+
+.barra_pesquisa select {
+    position: relative;
+    font-family: Arial;
+  }
+
+/* ////////////////////////////////////////////////////////// */
+/* Titulos e Subtitulos */  
+
+.titulos {
+    font-size: 3.5em;
+    color: #000;
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #000;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* Cards de Redação */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.containercard {
+    /* margin-bottom: 25px; */
+    padding: 16px;
+    background-color: var(--cor02);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.containercard h4 {
+    text-decoration: none;
+    color: #000;
+}
+
+.containercard a {
+    text-decoration: none;
+    color: #000;
+}
+.containercard p{
+    text-decoration: none;
+    color: #000;
+}
+
+.containercard a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.card { 
+    width: 420px;
+    height: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    margin: 15px;
+    border-radius: 20px
+
+}
+  
+.card img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 150%;
+    height: 260px;
+    display: block;
+}
+  
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+/* /////////////TEMA ESCURO////////////// */
+.dark-mode{
+    background-color: var(--dark);
+}
+
+.dark-mode h1,
+.dark-mode p,
+.dark-mode h2,
+.dark-mode h4{
+    color: #fff;
+}
+
+.dark-mode .p_redacao{
+    color: #000;
+}

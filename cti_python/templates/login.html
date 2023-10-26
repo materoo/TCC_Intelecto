@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Teste de Login</title>
+</head>
+    <body>
+        <main>
+            <div class="img_cabecalho">
+                <img src="{{ url_for('static', filename='intelecto_logo.svg') }}" alt="logo intelecto">
+            </div>
+            <div class="login">
+                    <div class="img_usuario">
+                        <img src="{{ url_for('static', filename='usuario.png') }}" alt="icone_usuario">
+                    </div>
+                    <div class="formulario">
+                        <form action="/login_redirect" method="post">
+                            <label for="email">E-mail:</label> <br>
+                            <input type="text"id="nome" name="email" placeholder=""> <br>
+
+                            <label for="senha" >Senha:</label> <br>
+                            <input type="password" id="senha" name="password" placeholder=""> <br> <br>
+
+                            <div class="mensagem-erro">{{ error_message }}</div>
+                            <div class="botao"><input type="submit" value="Entrar" class="botao"></div>
+                        </form>
+                    </div>
+
+            </div>
+        </main>
+
+<!--<footer class="footer">
+    <div class="footer-wave-box">
+        <div class="footer-wave"></div>
+    </div>
+    <div class="social">
+        <a href="https://instagram.com/escolaintelecto?igshid=MzRlODBiNWFlZA=="><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.facebook.com/intelectobauru"><ion-icon name="logo-facebook"></ion-icon></a>
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cadastrar</a></li>
+        <li><a href="#">Listar</a></li>
+        <li><a href="#">Aulas</a></li>
+        <li><a href="#">Matérias</a></li>
+    </ul>
+
+    <p class="copyright">
+        Intelecto @ 2023
+    </p>
+
+
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const navBar = document.querySelector("nav"),
+       menuBtns = document.querySelectorAll(".menu-icon"),
+       overlay = document.querySelector(".overlay");
+
+     menuBtns.forEach((menuBtn) => {
+       menuBtn.addEventListener("click", () => {
+         navBar.classList.toggle("open");
+       });
+     });
+
+     overlay.addEventListener("click", () => {
+       navBar.classList.remove("open");
+     });
+  </script>-->
+</body>
+</html>

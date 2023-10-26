@@ -1,0 +1,24 @@
+:root{
+    --cor01:#FFCEAE;
+    --cor02:#FF8B3E;
+    --cor03:#FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+}
+
+.pagination {
+    background-color: var(--cor02);
+    width: 15%;
+    margin-top: 2%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px 10px;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+}
+
+.dark-mode .pagination {
+    background-color: #fff;
+    color: var(--cor02);
+}

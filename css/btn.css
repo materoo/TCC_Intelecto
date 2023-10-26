@@ -1,0 +1,101 @@
+:root{
+    --cor01:#FFCEAE;
+    --cor02:#FF8B3E;
+    --cor03:#FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+    --dark3: #3b3e41;
+}
+
+
+button {
+    position: relative;
+    height: 65px;
+    margin: 0 40px;
+    width: 320px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.2s;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1%;
+    color: var(--cor02);
+    border-color: var(--cor02);
+}
+
+
+button:before,
+button:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+button:before {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:after {
+    width: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:hover:before,
+button:hover:after {
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+
+button:hover {
+    color: #f2f2f2;
+}
+
+button:hover {
+    background: var(--cor02);
+}
+
+h1{
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.dark-mode .button-conf {
+    color: var(--dark2);
+    border-color: var(--dark3);
+}
+
+.dark-mode button { 
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-mode button:hover {
+    background: var(--dark2);
+    color: #fff;
+    border-color: var(--dark2);
+}
+
+.dark-mode .body{
+    background-color: var(--dark);
+}
+
+.dark-mode h1{
+    color: white;
+}

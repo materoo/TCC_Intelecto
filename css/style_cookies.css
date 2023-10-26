@@ -1,0 +1,84 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --cor01: #FFCEAE;
+    --cor02: #FF8B3E;
+    --cor03: #FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+}
+
+.wrapper_cookie {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper_cookie.show {
+  right: 20px;
+}
+.wrapper_cookie header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.header_cookie i {
+  color: var(--cor02);
+  font-size: 32px;
+}
+.header_cookie h2 {
+  color: #000;
+  font-weight: 500;
+}
+.wrapper_cookie .data {
+  margin-top: 16px;
+}
+.wrapper_cookie .data p {
+  color: #333;
+  font-size: 16px;
+}
+.data p a {
+  color: var(--cor01);
+  text-decoration: none;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.wrapper_cookie .buttons_cookie {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons_cookie .button_cookie {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: var(--cor02);
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+.buttons_cookie #acceptBtn:hover {
+  background-color: var(--cor02);
+}
+#declineBtn {
+  border: 2px solid var(--cor02);
+  background-color: #fff;
+  color: var(--cor02);
+}
+#declineBtn:hover {
+  background-color: var(--cor02);
+  color: #fff;
+}
+

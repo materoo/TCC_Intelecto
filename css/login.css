@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor01: #FFCEAE;
+    --cor02: #FF8B3E;
+    --cor03: #FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+    --dark3: #3b3e41;
+}
+
+.mae {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor03);
+    position: relative;
+}
+
+.mae::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: var(--cor02);
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.container {
+    z-index: 12;
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.content .image-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .image-box img {
+    width: 100%;
+    align-items: center;
+}
+
+.content .topic {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+
+.content form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.content .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: var(--cor03);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus,
+.content .input-box input:valid {
+    border-color: var(--cor02);
+    background-color: #fff;
+}
+
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus~label,
+.content .input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: var(--cor02);
+    background: #fff;
+}
+
+.content .message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box textarea:focus~label {
+    left: 12px;
+    top: -10px;
+    color: var(--cor02);
+    font-size: 14px;
+    background: #fff;
+}
+
+.content .input-box input[type="submit"] {
+    color: #fff;
+    background: var(--cor02);
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input[type="submit"]:hover {
+    background-color: var(--cor01);
+}
+
+.esqSenha{
+    color: black;
+}
+
+@media (max-width:1000px) {
+    .content .image-box {
+        max-width: 70%;
+    }
+
+    .content {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width:900px) {
+    .content .image-box {
+        display: none;
+    }
+
+    .content form {
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+
+.dark-mode .mae::before {
+    background-color: var(--dark);
+}
+
+.dark-mode .mae {
+    background-color: var(--dark2);
+}
+
+.dark-mode .container {
+    background-color: var(--dark3);
+}
+
+.dark-mode .topic {
+    color: #fff;
+}
+
+
+.dark-mode .content .input-box input:focus,
+.dark-mode .content .input-box input:valid {
+    background-color: var(--dark3);
+    color: #fff;
+}
+
+.dark-mode .content .input-box input:focus~label,
+.dark-mode .content .input-box input:valid~label {
+    background-color: var(--dark3);
+    color: #fff;
+}
+
+.dark-mode .content .input-box input[type="submit"] {
+    color: #fff;
+    background: var(--cor02);
+}
+
+.dark-mode .content .input-box input[type="submit"]:hover {
+    background-color: var(--cor01);
+}
+
+.dark-mode .esqSenha{
+    color: white;
+}

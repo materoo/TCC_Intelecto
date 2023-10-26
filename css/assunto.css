@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root {
+  --cor01: #FFCEAE;
+  --cor02: #FF8B3E;
+  --cor03: #FFF5DD;
+  --dark: #22353E;
+  --dark2: #0F181D;
+}
+
+body {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  background-color: #FFF5DD;
+
+  /* Display do footer */
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container_main {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0px 10%;
+}
+
+.main-logo img {
+  max-width: 90%;
+  display: block;
+  margin-top: 1.5vw;
+}
+
+.main-img img {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* /////////////////////////////////////////////// */
+/* Titulos */
+
+.titulos {
+  font-size: 3.5em;
+  color: #000;
+  padding-left: 10%;
+}
+
+.subtitulo {
+  font-size: 16px;
+  color: #000;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 5px;
+  text-align: justify;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////// */
+/* Tabelas */
+
+.container_download {
+  width: 50vw;
+  margin: auto;
+}
+
+.topic {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #000;
+  padding: 10px;
+  margin-left: -60px;
+  border-radius: 4px;
+}
+
+.subtopic {
+  background-color: #FFCEAE;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+h3 {
+  margin: 10px;
+  margin-bottom: 10px;
+  color: #FF8B3E;
+}
+
+.btn-download {
+  margin: 5px;
+  display: block;
+  padding: 10px;
+  background-color: #FF8B3E;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .subtopic {
+    margin-top: 5px;
+  }
+
+  .btn-download {
+    padding: 8px 16px;
+  }
+}
+
+
+/* //////////////////////////// */
+
+
+.dark-mode {
+  background-color: var(--dark);
+}
+
+.dark-mode .titulos,
+.dark-mode .subtitulo,
+.dark-mode h2,
+.dark-mode h3 {
+  color: #fff;
+}
+
+.dark-mode .subtopic{
+  background-color: var(--dark2);
+}

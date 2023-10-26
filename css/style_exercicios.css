@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+:root{
+    --cor01:#FFCEAE;
+    --cor02:#FF8B3E;
+    --cor03:#FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+    --dark3: #3b3e41;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: var(--cor03);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 1em;
+    margin: 10px;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* Barra de Pesquisa */
+
+.barra_pesquisa {
+    background-color: var(--cor02);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+
+
+.barra_pesquisa a {
+    color: white;
+    border-radius: 50%;
+    transition: 0.1s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.barra_pesquisa a:hover {
+    color: var(--cor02);
+
+}
+
+.barra_pesquisa .select {
+    background-color: transparent;
+    border: none;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+option{
+    color: black;
+}
+
+.btn_pesquisa_exercicios{
+    background-color: var(--cor02);
+}
+
+.dark-mode .btn_pesquisa_exercicios{
+    background-color: var(--dark2);
+}
+
+/* CONTEUDO DO CABECALHO  */
+
+.container_main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.main-text {
+    max-width: 35rem;
+}
+
+.main-text h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777;
+    text-align: justify;
+}
+
+.main-text img {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.main-img img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.btn_ultimo_exerc{
+    margin-top: 25px;
+    height: auto;
+    width: 30%;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.2s;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1%;
+    color: var(--cor02);
+    border-color: var(--cor01);   
+}
+
+.btn_ultimo_exerc:before,
+.btn_ultimo_exerc:after { 
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+.btn_ultimo_exerc:hover {
+    color: #f2f2f2;
+}
+
+.btn_ultimo_exerc:hover {
+    background: var(--cor02);
+}
+
+/* RESPONSIVIDADE DO CABECALHO */
+
+@media (max-width:700px)
+/* para telas menores, mobile */
+    {
+    .container_main {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+        height: 100%;
+    }
+
+    .container_main h2 {
+        font-size: 15px;
+    }
+
+    .container_main p {
+        font-size: 15px;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+
+/* Estilos para o botão Enviar */
+.enviar {
+    padding: 10px 20px;
+    background-color: var(--cor02);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar:hover {
+    background-color: #b3612b;
+    color: white;
+}
+
+.enviar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/*DARK MODE*/
+
+.dark-mode{
+    background-color: var(--dark);
+}
+
+.dark-mode .barra_pesquisa {
+    background-color: var(--dark2);
+}
+.dark-mode p{
+    color: #fff;
+}
+.dark-mode h2{
+    color: white;
+}
+
+/* ////////////////NOVO CARD 2////////////////////////////////////////////////////////////////////*/
+
+.card_exercicios{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-top: 3%;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode .card{
+    background-color: #fff;
+}
+
+.dark-mode .enunciado{
+    color: #fff;
+}
+
+.dark-mode .alternativas{
+    color: #000;
+}
+
+.header {
+    background-color: var(--cor02);
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px;
+}
+
+.enunciado { 
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dark-mode .enunciado{
+    color: #000;
+}
+
+.dark-mode p {
+    color: #000;
+}
+
+.dark-mode .p_exercicios{
+    color: #fff;
+}
+
+.imagem_exercicio img{
+    width: 60%;
+    object-fit: fill;
+    height: auto;
+}
+
+.alternativas {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.alternativa {
+    margin-bottom: 10px;
+}
+
+.btn_exercicios {
+    position: relative;
+    height: 25px;
+    margin-bottom: 2%;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.2s;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 30px; 
+    padding-top: -25px; 
+    margin-top: 1%;
+    color: var(--cor02);
+    border-color: var(--cor02);   
+}
+
+
+.btn_exercicios:before,
+.btn_exercicios:after { 
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+.btn_exercicios:before {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.btn_exercicios:after {
+    width: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.btn_exercicios:hover:before,
+.btn_exercicios:hover:after {
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+
+.btn_exercicios:hover {
+    color: #f2f2f2;
+}
+
+.btn_exercicios:hover {
+    background: var(--cor02);
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.quiz-option input[type="radio"] {
+    display: none;
+}
+
+.quiz-option label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%; 
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.quiz-option label span {
+    font-size: 18px;
+}
+
+.quiz-option input[type="radio"]:checked+label {
+    border-color: var(--cor02);
+    background-color: var(--cor02);
+    /* color: white; */
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 35px;
+    margin-right: 15px;
+    
+  }
+  
+  /* Estilize o botão de rádio oculto padrão */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Estilize o ícone do botão de rádio */
+  .radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    /* background-color: #fff; */
+    border: 2px solid var(--cor01);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+    margin-left: -5px;
+    transition: background 0.3s ease;
+  }
+  
+  /* Adicione uma sombra para criar um efeito de preenchimento */
+  .radio-container input:checked ~ .radio-checkmark {
+    background-color: var(--cor02);
+    /* box-shadow: 0 0 0 10px #fff; */
+    color: #fff;
+  }

@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+
+:root {
+    --cor01: #FFCEAE;
+    --cor02: #FF8B3E;
+    --cor03: #FFF5DD;
+    --dark: #22353E;
+    --dark2: #0F181D;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #FFF5DD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+
+main {
+    padding: 1em;
+    margin: 10px;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* CONTEUDO DO CABECALHO  */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteudo_principal {
+
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagem_principal {
+    flex: 1;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.imagem_principal img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+}
+
+.texto_principal {
+    flex: 1;
+}
+
+.texto_principal img {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.texto_principal h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.texto_principal p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* MATÉRIAS */
+
+.materias h1 {
+    padding-left: 130px;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #FF8B3E;
+}
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #FFCEAE;
+    border-radius: 20px;
+    margin: 0 100px 50px 0;
+    display: inline-grid;
+    gap: 50px;
+}
+
+.card img {
+    padding: 18px 0;
+}
+
+.cards {
+    margin-left: 130px;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* BOTAO DARK MODEEEEEE */
+
+
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: var(--dark);
+    color: white;
+}
+
+.dark-mode .texto_principal p{
+    color: white;
+}
+
+.dark-mode .card{
+    background-color: white;
+}
+
+.dark-mode .card a{
+    color: var(--dark2);
+}
+
+.dark-mode .h2_bonito {
+    color: #fff;
+}

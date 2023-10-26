@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelecto - Estatisticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estatisticas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Intelecto</span>
+        </div>
+
+        <div class="sidebar-content">
+        <div class="guarda-perfil">
+            
+            <!-- <div class="user"><i class="bx bx-user-circle icon" ></i></div> -->
+            <img src="{{ url_for('static', filename='kizao.jpg') }}" alt="user">
+            <div class="nome-perfil">
+                <h1 class="nome-perfil-x">Administrador</h1>
+            </div>
+
+        </div>
+     <ul class="lists">
+            <li class="list">
+              <a href="{{ url_for('estatistica_materia') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Matérias</span>
+              </a>
+            </li>
+
+              <li class="list">
+              <a href="{{ url_for('estatistica_assunto') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Assuntos</span>
+              </a>
+            </li>
+
+              <li class="list">
+              <a href="{{ url_for('estatistica_vestibular') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Vestibulares</span>
+              </a>
+            </li>
+
+              <li class="list">
+              <a href="{{ url_for('estatistica_mes_materia') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Matérias x Mês</span>
+              </a>
+            </li>
+
+              <li class="list">
+              <a href="{{ url_for('estatistica_semana_materia') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Matérias x Semanas</span>
+              </a>
+            </li>
+
+               <li class="list">
+              <a href="{{ url_for('estatistica_mes_assunto') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Assuntos x Mês</span>
+              </a>
+            </li>
+
+              <li class="list">
+              <a href="{{ url_for('estatistica_semana_assunto') }}" class="nav-link">
+                <i class="bx bx-book icon"></i>
+                <span class="link">Assuntos x Semanas</span>
+              </a>
+            </li>
+
+            <!-- <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-message icon"></i>
+                <span class="link">Sobre</span>
+              </a>
+            </li> -->
+
+    </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Configurações</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="overlay"></section>     
+
+        <section class="cabecalho">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo_intelecto.svg') }}" alt="logo_intelecto" class="logo_intelecto">
+            </div>
+            <div class="row container">
+              <div class="column">
+                <h2>Estatísticas de Assuntos por Mês</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
+              </div>
+              <div class="column">
+                <img src="{{ url_for('static', filename='assunto.png') }}" alt="cabecalhoImg" class="cabecalho_img" />
+              </div>
+            </div>
+        </section>
+        <!-- //////////////////////////////////////////////////////// -->
+
+<!--        <section class="botoes">-->
+<!--            <div class="button-container">-->
+<!--                <button class="button">Botão 1</button>-->
+<!--                <button class="button">Botão 2</button>-->
+<!--                <button class="button">Botão 3</button>-->
+<!--                <button class="button">Botão 4</button>-->
+<!--                <button class="button">Botão 5</button>-->
+<!--                <button class="button">Botão 6</button>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--       <form id="widget-form" action="{{ url_for('processar_form') }}" method="POST">-->
+<!--            &lt;!&ndash; Outros campos do formulário aqui &ndash;&gt;-->
+
+<!--            <label for="materias">Matérias:</label>-->
+<!--            <select id="materias" name="materias" multiple>-->
+<!--                {% for value, label in opcoes_materias %}-->
+<!--                <option value="{{ value }}">{{ label }}</option>-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+
+<!--            <label for="assuntos">Assuntos:</label>-->
+<!--            <select id="assuntos" name="assuntos" multiple>-->
+<!--                {% for value, label in opcoes_assuntos %}-->
+<!--                <option value="{{ value }}">{{ label }}</option>-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+
+<!--           <label for="ano_i">Anos inicial</label>-->
+<!--            <select id="ano_i" name="ano_i">-->
+<!--                {% for value, label in opcoes_anos %}-->
+<!--                   <option value="{{ value | int }}">{{ label }}</option>-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+
+<!--           <label for="ano_f">Anos final</label>-->
+<!--            <select id="ano_f" name="ano_f">-->
+<!--                {% for value, label in opcoes_anos %}-->
+<!--                     <option value="{{ value | int }}">{{ label }}</option>-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+<!--&lt;!&ndash;            <label for="ano_i">Ano Inicial:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;            <input type="number" id="ano_i" min="2" max="2023" value="2020">&ndash;&gt;-->
+
+<!--&lt;!&ndash;             <label for="ano_f">Ano Final:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;             <input type="number" id="ano_f" min="2" max="3000" value="2030">&ndash;&gt;-->
+
+<!--            <button id="submit-button" type="submit">Visualizar</button>-->
+<!--        </form>-->
+
+    <section class="botoes">
+        <form id="widget-form" action="{{ url_for('processar_form') }}" method="POST">
+            <!-- Outros campos do formulário aqui -->
+            <input type="hidden" name="funcao" value="linha_temporal_assunto">
+            <label for="vestibulares">Vestibulares</label>
+            <select id="vestibulares" name="vestibulares" multiple>
+                 {% for value, label in opcoes_vestibulares %}
+                <option value="{{ value }}">{{ label }}</option>
+                 {% endfor %}
+            </select>
+            <label for="assuntos">Assuntos</label>
+            <select id="assuntos" name="assuntos" multiple>
+                 {% for value, label in opcoes_assuntos %}
+                <option value="{{ value }}">{{ label }}</option>
+                 {% endfor %}
+            </select>
+            <label for="ano_i">Anos inicial:</label>
+            <select id="ano_i" name="ano_i">
+                {% for value, label in opcoes_anos %}
+                   <option value="{{ value | int }}">{{ label }}</option>
+                {% endfor %}
+            </select>
+
+           <label for="ano_f">Anos final:</label>
+            <select id="ano_f" name="ano_f">
+                {% for value, label in opcoes_anos %}
+                     <option value="{{ value | int }}">{{ label }}</option>
+                {% endfor %}
+            </select>
+             <label for="ranking">Quantidade a aparecer</label>
+            <input type="number" id="ranking" name="ranking" min="2" max="20" value="2">
+
+             <select id="ordem" name="ordem">
+                 <option value="cronologica"> Cronológica</option>
+
+                 <option value="decrescente_acertos"> Decrescente de acertos</option>
+                 <option value="crescente_acertos"> Crescente de acertos</option>
+
+                 <option value="decrescente_erros"> Decrescente de erros</option>
+                 <option value="crescente_erros"> Crescente de erros</option>
+
+            </select>
+
+<!--            <label for="ano_i">Ano Inicial:</label>-->
+<!--            <input type="number" id="ano_i" min="2" max="2023" value="2020">-->
+
+<!--             <label for="ano_f">Ano Final:</label>-->
+<!--             <input type="number" id="ano_f" min="2" max="3000" value="2030">-->
+
+            <button id="submit-button" type="submit">Visualizar</button>
+        </form>
+    </section>
+
+        <section class="graficos">
+            {% if mensagem_erro %}
+                {{mensagem_erro}}
+            {% endif %}
+<!--            <img src="{{ url_for('static', filename='chart.png') }}" alt="user">-->
+<!--            {{ widget | safe }}-->
+             {% if chart_html %}
+                    {{ chart_html | safe }}
+             {% else %}
+                  <p>Nenhum gráfico disponível ainda. Por favor, preencha o formulário e clique em "Visualizar".</p>
+             {% endif %}
+        </section>
+
+<!--        <section class="barra_pesquisa">-->
+<!--            <div class="search-bar">-->
+<!--                <input type="text" class="search-input" placeholder="Digite aqui">-->
+<!--                <select class="search-dropdown">-->
+<!--                  <option value="option1">Opção 1</option>-->
+<!--                  <option value="option2">Opção 2</option>-->
+<!--                  <option value="option3">Opção 3</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <!-- /////////////////////////////////////////////////////// -->
+          
+<!--        <footer class="footer">-->
+<!--            <div class="footer-wave-box">-->
+<!--                <div class="footer-wave">-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="social">-->
+<!--                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>-->
+<!--                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>-->
+<!--                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>-->
+<!--                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>-->
+<!--            </div>-->
+
+<!--            <ul class="menu">-->
+<!--                <li><a href="#">Home</a></li>-->
+<!--                <li><a href="#">Redação</a></li>-->
+<!--                <li><a href="#">Exercícios</a></li>-->
+<!--                <li><a href="#">Aulas</a></li>-->
+<!--                <li><a href="#">Configurações</a></li>-->
+<!--            </ul>-->
+
+<!--            <p class="copyright">-->
+<!--                Intelecto @ 2023-->
+<!--            </p>-->
+
+<!--        </footer>-->
+
+    <footer class="footer">
+            <div class="footer-wave-box">
+                <div class="footer-wave"></div>
+            </div>
+            <div class="social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Redação</a></li>
+                <li><a href="#">Exercícios</a></li>
+                <li><a href="#">Aulas</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+
+            <p class="copyright">
+                Intelecto @ 2023
+            </p>
+
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<!--        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>-->
+<!--        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
+        <script>
+            const navBar = document.querySelector("nav"),
+               menuBtns = document.querySelectorAll(".menu-icon"),
+               overlay = document.querySelector(".overlay");
+        
+             menuBtns.forEach((menuBtn) => {
+               menuBtn.addEventListener("click", () => {
+                 navBar.classList.toggle("open");
+               });
+             });
+        
+             overlay.addEventListener("click", () => {
+               navBar.classList.remove("open");
+             });
+          </script>
+  </body>
+</html>

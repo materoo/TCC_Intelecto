@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    max-width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+button {
+    background-color: var(--cor02);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.first{
+    border-radius: 0;
+}
+
+button:hover{
+    background-color: #b9652d;
+}
+
+button ion-icon{
+    font-size: 25px;
+    color: #fff;
+}
+  
+  /* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .search-bar {
+      max-width: 90%;
+    }
+}
+
