@@ -49,8 +49,9 @@ Ou apenas extraia o projeto caso esteja em formato .zip.
 
 
 2️⃣ Instalar dependências do Laravel
+```bash
 composer install
-
+```
 
 
 3️⃣ Configurar o ambiente
