@@ -1,5 +1,5 @@
 # TCC Plataforma Intelecto – Sistema Digital de Conteúdos e Exercícios Educacionais
-##📌 SOBRE O PROJETO
+📌 ## SOBRE O PROJETO
 
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico, com o objetivo de criar uma plataforma digital educacional para a rede de cursinhos Intelecto, e tem como finalidade:
 
