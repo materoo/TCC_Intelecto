@@ -127,12 +127,12 @@ pip install -r requirements.txt
 
 ## 👨‍💻 AUTORES
 
-Gabriel Iamato
-Guilherme Tvares
-Gustavo Rocha
-Marcela Amorim
-Mateus Juares Felipe
-Matheus Stolf Eberle
-Murilo Gonzales Vieira
+- Gabriel Iamato
+- Guilherme Tvares
+- Gustavo Rocha
+- Marcela Amorim
+- Mateus Juares Felipe
+- Matheus Stolf Eberle
+- Murilo Gonzales Vieira
 
 Projeto desenvolvido como TCC do Ensino Médio Técnico.
