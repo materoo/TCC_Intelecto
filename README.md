@@ -1,5 +1,5 @@
 # TCC Plataforma Intelecto – Sistema Digital de Conteúdos e Exercícios Educacionais
-📌 ## SOBRE O PROJETO
+## 📌 SOBRE O PROJETO
 
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico, com o objetivo de criar uma plataforma digital educacional para a rede de cursinhos Intelecto, e tem como finalidade:
 
@@ -12,7 +12,7 @@ O sistema foi desenvolvido utilizando Laravel (PHP) no backend, Bootstrap e CSS 
 
 
 
-##🛠️ TECNOLOGIAS UTILIZADAS
+## 🛠️ TECNOLOGIAS UTILIZADAS
 
  -PHP 8.x
  -Laravel
@@ -25,7 +25,7 @@ O sistema foi desenvolvido utilizando Laravel (PHP) no backend, Bootstrap e CSS 
 
 
 
-##⚙️ PRÉ-REQUISITOS
+## ⚙️ PRÉ-REQUISITOS
 
 -PHP 8.x
 -Composer
@@ -37,7 +37,7 @@ O sistema foi desenvolvido utilizando Laravel (PHP) no backend, Bootstrap e CSS 
 
 
 
-##🚀 COMO EXECUTAR
+## 🚀 COMO EXECUTAR
 
 1️⃣ Clonar o repositório
 ```bash
@@ -124,7 +124,7 @@ pip install -r requirements.txt
 
 
 
-##👨‍💻 AUTORES
+## 👨‍💻 AUTORES
 
 Gabriel Iamato
 Guilherme Tvares
