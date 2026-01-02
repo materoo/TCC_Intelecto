@@ -3,10 +3,10 @@
 
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico, com o objetivo de criar uma plataforma digital educacional para a rede de cursinhos Intelecto, e tem como finalidade:
 
--disponibilizar conteúdos escolares digitais
--Oferecer listas de exercícios para os alunos
--Centralizar o acesso a materiais didáticos em um ambiente online
--Auxiliar no processo de ensino-aprendizagem de forma prática e acessível
+- Disponibilizar conteúdos escolares digitais
+- Oferecer listas de exercícios para os alunos
+- Centralizar o acesso a materiais didáticos em um ambiente online
+- Auxiliar no processo de ensino-aprendizagem de forma prática e acessível
 
 O sistema foi desenvolvido utilizando Laravel (PHP) no backend, Bootstrap e CSS no frontend, PostgreSQL como banco de dados e conta com uma funcionalidade complementar desenvolvida em Python para processamento específico.
 
@@ -14,25 +14,25 @@ O sistema foi desenvolvido utilizando Laravel (PHP) no backend, Bootstrap e CSS 
 
 ## 🛠️ TECNOLOGIAS UTILIZADAS
 
- -PHP 8.x
- -Laravel
- -Composer
- -Bootstrap
- -CSS
- -PostgreSQL
- -pgAdmin 4
- -Python 3.x
+ - PHP 8.x
+ - Laravel
+ - Composer
+ - Bootstrap
+ - CSS
+ - PostgreSQL
+ - pgAdmin 4
+ - Python 3.x
 
 
 
 ## ⚙️ PRÉ-REQUISITOS
 
--PHP 8.x
--Composer
--PostgreSQL
--pgAdmin 4
--Python 3.x
--Git
+- PHP 8.x
+- Composer
+- PostgreSQL
+- pgAdmin 4
+- Python 3.x
+- Git
 
 
 
@@ -81,9 +81,9 @@ php artisan key:generate
 
 No pgAdmin 4:
 
--Abra o pgAdmin
--Conecte ao servidor PostgreSQL
--Crie um banco de dados com o nome configurado no .env
+- Abra o pgAdmin
+- Conecte ao servidor PostgreSQL
+- Crie um banco de dados com o nome configurado no .env
 
 
 
